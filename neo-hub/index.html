@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NeoHub OS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<canvas id="galaxy"></canvas>
+
+<!-- Dock -->
+<div id="dock">
+  <div onclick="openModule('ai')">🧠</div>
+  <div onclick="openModule('game')">🎮</div>
+  <div onclick="openModule('terminal')">💻</div>
+  <div onclick="openModule('visualizer')">🎧</div>
+</div>
+
+<!-- Command Palette -->
+<div id="palette" class="hidden">
+  <input id="palette-input" placeholder="Type command...">
+</div>
+
+<script src="script.js"></script>
+<script src="modules/windowManager.js"></script>
+<script src="modules/ai.js"></script>
+<script src="modules/game.js"></script>
+<script src="modules/terminal.js"></script>
+<script src="modules/visualizer.js"></script>
+<script src="modules/commandPalette.js"></script>
+
+</body>
+</html>
