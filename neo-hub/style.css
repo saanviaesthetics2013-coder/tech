@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  background: black;
+  color: cyan;
+  font-family: monospace;
+  overflow: hidden;
+}
+
+/* Galaxy */
+canvas {
+  position: fixed;
+  z-index: -1;
+}
+
+/* Dock */
+#dock {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 25px;
+  background: rgba(0,0,0,0.6);
+  padding: 15px 25px;
+  border-radius: 25px;
+}
+
+#dock div {
+  font-size: 26px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#dock div:hover {
+  transform: scale(1.6);
+}
+
+/* Window */
+.window {
+  position: absolute;
+  width: 360px;
+  background: rgba(0,0,0,0.85);
+  border: 1px solid cyan;
+  border-radius: 10px;
+  box-shadow: 0 0 30px cyan;
+}
+
+.title {
+  padding: 10px;
+  background: rgba(0,255,255,0.2);
+  cursor: move;
+}
+
+.content {
+  padding: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+/* Chat bubbles */
+.msg-user {
+  text-align: right;
+  color: white;
+}
+.msg-ai {
+  color: cyan;
+}
+
+/* Command palette */
+#palette {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: black;
+  border: 1px solid cyan;
+  padding: 20px;
+}
+
+.hidden {
+  display: none;
+}
